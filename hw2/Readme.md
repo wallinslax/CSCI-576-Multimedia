@@ -1,4 +1,4 @@
-Course: CSCI-576
+# Course: CSCI-576
 Semeter: Fall 2022
 Author: Sung-Fu Han
 USC ID: 2644230653 
