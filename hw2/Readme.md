@@ -16,4 +16,5 @@ https://docs.google.com/document/d/130jR-2wYhSNXshkjNhWsKO4WfDjnQAf6PRsYL39sC0U/
     java ImageDisplay.java ../subtraction/background_subtraction_2 ../input/background_static_2 0
 
 The 24 fps video will show after processing.
+
 Please use "ctrl+c" to teminate the code before run next command.
