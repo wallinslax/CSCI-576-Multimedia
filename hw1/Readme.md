@@ -1,3 +1,13 @@
+#### Course: CSCI-576
+#### Semeter: Fall 2022
+#### Author: Sung-Fu Han
+#### USC ID: 2644230653 
+---
+### Theory part
+https://docs.google.com/document/d/1MjjtGNMYDuPZI_Puf34HQ6lnvV6n9yxRCEAhqSywD4I/edit?usp=sharing
+
+### Program part
+
 #### Sample command
     java -ea ImageDisplay.java img/miamibeach.rgb 1 1 1 1 1 0 
     java -ea ImageDisplay.java img/miamibeach.rgb 1 2 2 1 1 0 
