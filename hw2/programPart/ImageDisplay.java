@@ -1,20 +1,3 @@
-/*
-Course: CSCI-576
-Semeter: Fall 2022
-Author: Sung-Fu Han
-USC ID: 2644230653 
-
-
-Mode 1 sample command
->> java ImageDisplay.java ../input/foreground_1 ../input/background_static_1 1
->> java ImageDisplay.java ../input/foreground_2 ../input/background_moving_1 1
-
-Mode 0 sample command
->> java ImageDisplay.java ../subtraction/background_subtraction_1 ../input/background_static_2 0
->> java ImageDisplay.java ../subtraction/background_subtraction_2 ../input/background_static_2 0
-
-Please use "ctrl+c" to teminate the code before run next command.
- */
 import java.awt.*;
 import java.awt.image.*;
 import java.io.*;
@@ -167,7 +150,6 @@ public class ImageDisplay {
 			}
 	}
 
-
 	public void process(){
 		System.out.println("(Mode: "+this.mode+") Processing...");
 		double[][] avgR = new double[height][width];
@@ -194,19 +176,17 @@ public class ImageDisplay {
 			// 	showImg(outImgs[i]);
 			// }catch (Exception e) {System.out.println(e);}
 			// save to output folder
-			try{
-				File directory = new File("output/");
-				if (! directory.exists()){
-					directory.mkdir();
-					// If you require it to make the entire directory path including parents,
-					// use directory.mkdirs(); here instead.
-				}
-				String[] parts = this.foreGroundDir.split("/");
-				String fileName = parts[parts.length - 1];
-				// ImageIO.write(fImg,"jpeg", new File("output/"+ fileName + "_mode_" + this.mode + '_' + i + ".jpg"));
-			}catch(Exception exception){
-				System.out.println("exception ImageIO");
-			}
+			// try{
+			// 	File directory = new File("output/");
+			// 	if (! directory.exists()){
+			// 		directory.mkdir();
+			// 	}
+			// 	String[] parts = this.foreGroundDir.split("/");
+			// 	String fileName = parts[parts.length - 1];
+			// 	// ImageIO.write(fImg,"jpeg", new File("output/"+ fileName + "_mode_" + this.mode + '_' + i + ".jpg"));
+			// }catch(Exception exception){
+			// 	System.out.println("exception ImageIO");
+			// }
 		}
 	}
 
@@ -233,12 +213,10 @@ public class ImageDisplay {
 		String foreGroundDir = args[0];
         String backGroundDir = args[1];
         int mode = Integer.parseInt(args[2]);
-		// String foreGroundDir = "../subtraction/background_subtraction_1";
-		// String backGroundDir = "../input/background_static_1";
-		// int mode = 0;
-		// String backGroundDirM = "../input/background_moving_1";
-		// String foreGroundSubDir = "../subtraction/background_subtraction_2";
-		
+		// String foreGroundDir = "G:\My Drive\USC Courses\CSCI-576 Fall22\hw2RGB\input\foreground_1";
+		// String backGroundDir = "G:\My Drive\USC Courses\CSCI-576 Fall22\hw2RGB\input\background_static_1";
+		// int mode = 1;
+
 		int width = 640;
 		int height = 480;
 		ImageDisplay cvt = new ImageDisplay(foreGroundDir,backGroundDir,mode,width,height);
