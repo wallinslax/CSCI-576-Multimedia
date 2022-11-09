@@ -1,5 +1,5 @@
 # Final Project
 Member:
 - Chia-Hao Chang
-- Iven
+- Chih-Ken Yao
 - Sung-Fu Han
